@@ -20,6 +20,7 @@ public class Main {
         int VanillaSpecullos600ML = 40000;
         int CherryBlossom330ML = 23000;
         int CherryBlossom600ML = 40000;
+        int ngentot;
 
         String[] Data = new String[16];
         Data[0] = " ";
