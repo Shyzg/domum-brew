@@ -20,7 +20,7 @@ public class Main {
         int VanillaSpecullos600ML = 40000;
         int CherryBlossom330ML = 23000;
         int CherryBlossom600ML = 40000;
-        int ngentot;
+
 
         String[] Data = new String[16];
         Data[0] = " ";
@@ -47,6 +47,7 @@ public class Main {
             System.out.print ("1. Menu Varian 330ML\n");
             System.out.print ("2. Menu Varian 600ML\n");
             System.out.print ("3. Hitung Total Penjualan\n");
+            System.out.print ("4. Hapus Varian\n" );
             System.out.print ("Pilih Menu\t: ");
             byte PilihVarian = Main.nextByte ();
 
@@ -127,6 +128,36 @@ public class Main {
                         System.out.printf ("Grand Total Penjualah Hari Ini\t:\t%d\n", GTotal);
                     } else {
                         System.out.print ("Anda Belum Menghitung Pedapatan Hari Ini, Silahkan Coba Ke\n");
+                    }
+                }
+                case 4 -> {
+                    if (Total330ML > 0 || Total600ML > 0){
+                        System.out.print("1. Varian 330ML\n");
+                        System.out.print("2. Varian 600ML\n");
+                        System.out.print("Pilih     :\n");
+                        int hapus = Main.nextInt();
+                        if ( hapus == 1) {
+                            System.out.print  ("--PESANAN SEBELUMNYA--\n");
+                            System.out.print  ("=======================================\n");
+                            System.out.print  ("A. Jumlah Classic Black :"+ Data[0] + "\n");
+                            System.out.print  ("B. Jumlah Classic White :"+ Data[1] + "\n");
+                            System.out.print  ("C. Jumlah Vanilla       :"+ Data[2] + "\n");
+                            System.out.print  ("D. Jumlah Butter Scotch :"+ Data[3] + "\n");
+                            System.out.print  ("E. Jumlah Chocomalt     :"+ Data[4] + "\n");
+                            System.out.print  ("F. Vanilla Specullos    :"+ Data[5] + "\n");
+                            System.out.print  ("G. Cherry Blossom       :"+ Data[6] + "\n");
+                            System.out.print  ("=======================================\n");
+                            System.out.println(" ");
+                            System.out.print  ("--PESANAN YANG INGIN DIRUBAH--\n");
+                           // System.out.print();
+
+
+
+
+                        }
+                    }
+                    else {
+                        System.out.print ("Anda Belum Menghitung Pedapatan Hari Ini !!\n");
                     }
                 }
             }
