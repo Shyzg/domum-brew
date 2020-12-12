@@ -21,7 +21,6 @@ public class Main {
         int CherryBlossom330ML = 23000;
         int CherryBlossom600ML = 40000;
 
-
         String[] Data = new String[16];
         Data[0] = " ";
         Data[1] = " ";
@@ -48,26 +47,26 @@ public class Main {
             System.out.print ("2. Menu Varian 600ML\n");
             System.out.print ("3. Hitung Total Penjualan\n");
             System.out.print ("4. Hapus Varian\n");
-            System.out.print ("Pilih Menu\t: ");
+            System.out.print ("Pilih Menu\t:\t");
             byte PilihVarian = Main.nextByte ();
 
             switch (PilihVarian) {
                 case 1 -> {
                     System.out.print ("Menu Varian 330ML\n");
                     System.out.print ("~~~~~~~~~~~~~~~~~\n");
-                    System.out.print ("Classic Black        : ");
+                    System.out.print ("Classic Black        :\t");
                     Data[0] = Main.next () + Main.nextLine ();
-                    System.out.print ("Classic White        : ");
+                    System.out.print ("Classic White        :\t");
                     Data[1] = Main.next () + Main.nextLine ();
-                    System.out.print ("Vanilla              : ");
+                    System.out.print ("Vanilla              :\t");
                     Data[2] = Main.next () + Main.nextLine ();
-                    System.out.print ("Butter Scotch        : ");
+                    System.out.print ("Butter Scotch        :\t");
                     Data[3] = Main.next () + Main.nextLine ();
-                    System.out.print ("Chocomalt            : ");
+                    System.out.print ("Chocomalt            :\t");
                     Data[4] = Main.next () + Main.nextLine ();
-                    System.out.print ("Vanilla Specullos    : ");
+                    System.out.print ("Vanilla Specullos    :\t");
                     Data[5] = Main.next () + Main.nextLine ();
-                    System.out.print ("Cherry Blossom       : ");
+                    System.out.print ("Cherry Blossom       :\t");
                     Data[6] = Main.next () + Main.nextLine ();
 
                     double CBlack330ML = Double.parseDouble (Data[0]);
@@ -90,19 +89,19 @@ public class Main {
                 case 2 -> {
                     System.out.print ("Menu Varian 600ML\n");
                     System.out.print ("~~~~~~~~~~~~~~~~~\n");
-                    System.out.print ("Classic Black        : ");
+                    System.out.print ("Classic Black        :\t");
                     Data[7] = Main.next () + Main.nextLine ();
-                    System.out.print ("Classic White        : ");
+                    System.out.print ("Classic White        :\t");
                     Data[8] = Main.next () + Main.nextLine ();
-                    System.out.print ("Vanilla              : ");
+                    System.out.print ("Vanilla              :\t");
                     Data[9] = Main.next () + Main.nextLine ();
-                    System.out.print ("Butter Scotch        : ");
+                    System.out.print ("Butter Scotch        :\t");
                     Data[10] = Main.next () + Main.nextLine ();
-                    System.out.print ("Chocomalt            : ");
+                    System.out.print ("Chocomalt            :\t");
                     Data[11] = Main.next () + Main.nextLine ();
-                    System.out.print ("Vanilla Specullos    : ");
+                    System.out.print ("Vanilla Specullos    :\t");
                     Data[12] = Main.next () + Main.nextLine ();
-                    System.out.print ("Cherry Blossom       : ");
+                    System.out.print ("Cherry Blossom       :\t");
                     Data[13] = Main.next () + Main.nextLine ();
 
                     double CBlack600ML = Double.parseDouble (Data[7]);
@@ -134,7 +133,7 @@ public class Main {
                     if (Total330ML > 0 || Total600ML > 0) {
                         System.out.print ("1. Varian 330ML\n");
                         System.out.print ("2. Varian 600ML\n");
-                        System.out.print ("Pilih\t: ");
+                        System.out.print ("Pilih\t:\t");
                         int Hapus = Main.nextInt ();
                         if (Hapus == 1) {
                             System.out.print ("~~~~~~PESANAN SEBELUMNYA~~~~~~\n");
@@ -153,7 +152,7 @@ public class Main {
                     }
                 }
             }
-            System.out.print ("Ketik Y/y Untuk Kembali ke Menu Awal, Dan Ketik Keyword Lain Untuk Mengakhiri Program Ini\t: ");
+            System.out.print ("Ketik Y/y Untuk Kembali ke Menu Awal, Dan Ketik Keyword Lain Untuk Mengakhiri Program Ini\t:\t");
             Menu = Main.next () + Main.nextLine ();
         } while ("Y".equalsIgnoreCase (Menu));
     }
