@@ -47,7 +47,7 @@ public class Main {
             System.out.print ("1. Menu Varian 330ML\n");
             System.out.print ("2. Menu Varian 600ML\n");
             System.out.print ("3. Hitung Total Penjualan\n");
-            System.out.print ("4. Hapus Varian\n" );
+            System.out.print ("4. Hapus Varian\n");
             System.out.print ("Pilih Menu\t: ");
             byte PilihVarian = Main.nextByte ();
 
@@ -55,19 +55,19 @@ public class Main {
                 case 1 -> {
                     System.out.print ("Menu Varian 330ML\n");
                     System.out.print ("~~~~~~~~~~~~~~~~~\n");
-                    System.out.print ("Classic Black\t\t: ");
+                    System.out.print ("Classic Black        : ");
                     Data[0] = Main.next () + Main.nextLine ();
-                    System.out.print ("Classic White\t\t: ");
+                    System.out.print ("Classic White        : ");
                     Data[1] = Main.next () + Main.nextLine ();
-                    System.out.print ("Vanilla\t\t: ");
+                    System.out.print ("Vanilla              : ");
                     Data[2] = Main.next () + Main.nextLine ();
-                    System.out.print ("Butter Scotch\t\t: ");
+                    System.out.print ("Butter Scotch        : ");
                     Data[3] = Main.next () + Main.nextLine ();
-                    System.out.print ("Chocomalt\t\t: ");
+                    System.out.print ("Chocomalt            : ");
                     Data[4] = Main.next () + Main.nextLine ();
-                    System.out.print ("Vanilla Specullos\t\t: ");
+                    System.out.print ("Vanilla Specullos    : ");
                     Data[5] = Main.next () + Main.nextLine ();
-                    System.out.print ("Cherry Blossom\t\t: ");
+                    System.out.print ("Cherry Blossom       : ");
                     Data[6] = Main.next () + Main.nextLine ();
 
                     double CBlack330ML = Double.parseDouble (Data[0]);
@@ -90,19 +90,19 @@ public class Main {
                 case 2 -> {
                     System.out.print ("Menu Varian 600ML\n");
                     System.out.print ("~~~~~~~~~~~~~~~~~\n");
-                    System.out.print ("Classic Black\t\t: ");
+                    System.out.print ("Classic Black        : ");
                     Data[7] = Main.next () + Main.nextLine ();
-                    System.out.print ("Classic White\t\t: ");
+                    System.out.print ("Classic White        : ");
                     Data[8] = Main.next () + Main.nextLine ();
-                    System.out.print ("Vanilla\t\t: ");
+                    System.out.print ("Vanilla              : ");
                     Data[9] = Main.next () + Main.nextLine ();
-                    System.out.print ("Butter Scotch\t\t: ");
+                    System.out.print ("Butter Scotch        : ");
                     Data[10] = Main.next () + Main.nextLine ();
-                    System.out.print ("Chocomalt\t\t: ");
+                    System.out.print ("Chocomalt            : ");
                     Data[11] = Main.next () + Main.nextLine ();
-                    System.out.print ("Vanilla Specullos\t\t: ");
+                    System.out.print ("Vanilla Specullos    : ");
                     Data[12] = Main.next () + Main.nextLine ();
-                    System.out.print ("Cherry Blossom\t\t: ");
+                    System.out.print ("Cherry Blossom       : ");
                     Data[13] = Main.next () + Main.nextLine ();
 
                     double CBlack600ML = Double.parseDouble (Data[7]);
@@ -131,33 +131,25 @@ public class Main {
                     }
                 }
                 case 4 -> {
-                    if (Total330ML > 0 || Total600ML > 0){
-                        System.out.print("1. Varian 330ML\n");
-                        System.out.print("2. Varian 600ML\n");
-                        System.out.print("Pilih     :\n");
-                        int hapus = Main.nextInt();
-                        if ( hapus == 1) {
-                            System.out.print  ("--PESANAN SEBELUMNYA--\n");
-                            System.out.print  ("=======================================\n");
-                            System.out.print  ("A. Jumlah Classic Black :"+ Data[0] + "\n");
-                            System.out.print  ("B. Jumlah Classic White :"+ Data[1] + "\n");
-                            System.out.print  ("C. Jumlah Vanilla       :"+ Data[2] + "\n");
-                            System.out.print  ("D. Jumlah Butter Scotch :"+ Data[3] + "\n");
-                            System.out.print  ("E. Jumlah Chocomalt     :"+ Data[4] + "\n");
-                            System.out.print  ("F. Vanilla Specullos    :"+ Data[5] + "\n");
-                            System.out.print  ("G. Cherry Blossom       :"+ Data[6] + "\n");
-                            System.out.print  ("=======================================\n");
-                            System.out.println(" ");
-                            System.out.print  ("--PESANAN YANG INGIN DIRUBAH--\n");
-                           // System.out.print();
-
-
-
-
+                    if (Total330ML > 0 || Total600ML > 0) {
+                        System.out.print ("1. Varian 330ML\n");
+                        System.out.print ("2. Varian 600ML\n");
+                        System.out.print ("Pilih\t: ");
+                        int Hapus = Main.nextInt ();
+                        if (Hapus == 1) {
+                            System.out.print ("~~~~~~PESANAN SEBELUMNYA~~~~~~\n");
+                            System.out.print ("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+                            System.out.printf ("A. Jumlah Classic Black :\t%s\n", Data[0]);
+                            System.out.printf ("B. Jumlah Classic White :\t%s\n", Data[1]);
+                            System.out.printf ("C. Jumlah Vanilla       :\t%s\n", Data[2]);
+                            System.out.printf ("D. Jumlah Butter Scotch :\t%s\n", Data[3]);
+                            System.out.printf ("E. Jumlah Chocomalt     :\t%s\n", Data[4]);
+                            System.out.printf ("F. Vanilla Specullos    :\t%s\n", Data[5]);
+                            System.out.printf ("G. Cherry Blossom       :\t%s\n", Data[6]);
+                            System.out.print ("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
                         }
-                    }
-                    else {
-                        System.out.print ("Anda Belum Menghitung Pedapatan Hari Ini !!\n");
+                    } else {
+                        System.out.print ("Anda Belum Menghitung Pedapatan Hari Ini!\n");
                     }
                 }
             }
