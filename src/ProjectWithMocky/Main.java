@@ -169,39 +169,39 @@ public class Main {
 
                                     if ("A".equalsIgnoreCase(pilihg)) {
                                         Data[0] = null;
-                                        System.out.printf("A. Jumlah Ganti Baru Classic Black       330ML   :\t");
+                                        System.out.print("A. Jumlah Ganti Baru Classic Black       330ML   :\t");
                                         Data[0] = Main.next() + Main.nextLine();
-                                        System.out.printf("Data Berhasil Diganti !!\t");
+                                        System.out.print("Data Berhasil Diganti !!\t");
                                     } else if ("B".equalsIgnoreCase(pilihg)) {
                                         Data[1] = null;
-                                        System.out.printf("B. Jumlah Ganti Baru Classic White       330ML   :\t");
+                                        System.out.print("B. Jumlah Ganti Baru Classic White       330ML   :\t");
                                         Data[1] = Main.next() + Main.nextLine();
-                                        System.out.printf("Data Berhasil Diganti !!\t");
+                                        System.out.print("Data Berhasil Diganti !!\t");
                                     } else if ("C".equalsIgnoreCase(pilihg)) {
                                         Data[2] = null;
-                                        System.out.printf("C. Jumlah Ganti Baru vanilla             330ML   :\t");
+                                        System.out.print("C. Jumlah Ganti Baru vanilla             330ML   :\t");
                                         Data[2] = Main.next() + Main.nextLine();
-                                        System.out.printf("Data Berhasil Diganti !!\t");
+                                        System.out.print("Data Berhasil Diganti !!\t");
                                     } else if ("D".equalsIgnoreCase(pilihg)) {
                                         Data[3] = null;
-                                        System.out.printf("D. Jumlah Ganti Baru Butter Scotch       330ML   :\t");
+                                        System.out.print("D. Jumlah Ganti Baru Butter Scotch       330ML   :\t");
                                         Data[3] = Main.next() + Main.nextLine();
-                                        System.out.printf("Data Berhasil Diganti !!\t");
+                                        System.out.print("Data Berhasil Diganti !!\t");
                                     } else if ("E".equalsIgnoreCase(pilihg)) {
                                         Data[4] = null;
-                                        System.out.printf("E. Jumlah Ganti Baru Chocomalt           330ML   :\t");
+                                        System.out.print("E. Jumlah Ganti Baru Chocomalt           330ML   :\t");
                                         Data[4] = Main.next() + Main.nextLine();
-                                        System.out.printf("Data Berhasil Diganti !!\t");
+                                        System.out.print("Data Berhasil Diganti !!\t");
                                     } else if ("F".equalsIgnoreCase(pilihg)) {
                                         Data[5] = null;
-                                        System.out.printf("F. Jumlah Ganti Baru vanilla Specullos   330ML   :\t");
+                                        System.out.print("F. Jumlah Ganti Baru vanilla Specullos   330ML   :\t");
                                         Data[5] = Main.next() + Main.nextLine();
-                                        System.out.printf("Data Berhasil Diganti !!\t");
+                                        System.out.print("Data Berhasil Diganti !!\t");
                                     } else if ("G".equalsIgnoreCase(pilihg)) {
                                         Data[6] = null;
-                                        System.out.printf("A. Jumlah Ganti Baru Cherry Blossom      330ML   :\t");
+                                        System.out.print("A. Jumlah Ganti Baru Cherry Blossom      330ML   :\t");
                                         Data[6] = Main.next() + Main.nextLine();
-                                        System.out.printf("Data Berhasil Diganti !!\t");
+                                        System.out.print("Data Berhasil Diganti !!\t");
                                     }
                                     System.out.println("Ketik Y/y untuk merubah menu 330ML lagi, dan ketik Keyword Lain Untuk Kembali ke Menu Awal : ");
                                     loop = Main.next() + Main.nextLine();
@@ -223,39 +223,39 @@ public class Main {
 
                                     if ("A".equalsIgnoreCase(pilihg)) {
                                         Data[7] = null;
-                                        System.out.printf("A. Jumlah Ganti Baru Classic Black       600ML   :\t");
+                                        System.out.print("A. Jumlah Ganti Baru Classic Black       600ML   :\t");
                                         Data[7] = Main.next() + Main.nextLine();
-                                        System.out.printf("Data Berhasil Diganti !!\t");
+                                        System.out.print("Data Berhasil Diganti !!\t");
                                     } else if ("B".equalsIgnoreCase(pilihg)) {
                                         Data[8] = null;
-                                        System.out.printf("B. Jumlah Ganti Baru Classic White       600ML   :\t");
+                                        System.out.print("B. Jumlah Ganti Baru Classic White       600ML   :\t");
                                         Data[8] = Main.next() + Main.nextLine();
-                                        System.out.printf("Data Berhasil Diganti !!\t");
+                                        System.out.print("Data Berhasil Diganti !!\t");
                                     } else if ("C".equalsIgnoreCase(pilihg)) {
                                         Data[9] = null;
-                                        System.out.printf("C. Jumlah Ganti Baru vanilla             600ML   :\t");
+                                        System.out.print("C. Jumlah Ganti Baru vanilla             600ML   :\t");
                                         Data[9] = Main.next() + Main.nextLine();
-                                        System.out.printf("Data Berhasil Diganti !!\t");
+                                        System.out.print("Data Berhasil Diganti !!\t");
                                     } else if ("D".equalsIgnoreCase(pilihg)) {
                                         Data[10] = null;
-                                        System.out.printf("D. Jumlah Ganti Baru Butter Scotch       600ML   :\t");
+                                        System.out.print("D. Jumlah Ganti Baru Butter Scotch       600ML   :\t");
                                         Data[10] = Main.next() + Main.nextLine();
-                                        System.out.printf("Data Berhasil Diganti !!\t");
+                                        System.out.print("Data Berhasil Diganti !!\t");
                                     } else if ("E".equalsIgnoreCase(pilihg)) {
                                         Data[11] = null;
-                                        System.out.printf("E. Jumlah Ganti Baru Chocomalt           600ML   :\t");
+                                        System.out.print("E. Jumlah Ganti Baru Chocomalt           600ML   :\t");
                                         Data[11] = Main.next() + Main.nextLine();
-                                        System.out.printf("Data Berhasil Diganti !!\t");
+                                        System.out.print("Data Berhasil Diganti !!\t");
                                     } else if ("F".equalsIgnoreCase(pilihg)) {
                                         Data[12] = null;
-                                        System.out.printf("F. Jumlah Ganti Baru vanilla Specullos   600ML   :\t");
+                                        System.out.print("F. Jumlah Ganti Baru vanilla Specullos   600ML   :\t");
                                         Data[12] = Main.next() + Main.nextLine();
-                                        System.out.printf("Data Berhasil Diganti !!\t");
+                                        System.out.print("Data Berhasil Diganti !!\t");
                                     } else if ("G".equalsIgnoreCase(pilihg)) {
                                         Data[13] = null;
-                                        System.out.printf("A. Jumlah Ganti Baru Cherry Blossom      600ML   :\t");
+                                        System.out.print("G. Jumlah Ganti Baru Cherry Blossom      600ML   :\t");
                                         Data[13] = Main.next() + Main.nextLine();
-                                        System.out.printf("Data Berhasil Diganti !!\t");
+                                        System.out.print("Data Berhasil Diganti !!\t");
                                     }
 
                                     System.out.println("Ketik Y/y untuk merubah menu 660 ML lagi, dan ketik Keyword Lain Untuk Kembali ke Menu Pergantian Jumlah Varian : ");
