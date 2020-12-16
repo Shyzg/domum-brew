@@ -55,74 +55,88 @@ public class Main {
 
             switch (PilihVarian) {
                 case 1 -> {
-                    System.out.print("Menu Varian 330ML\n");
-                    System.out.print("~~~~~~~~~~~~~~~~~\n");
-                    System.out.print("Classic Black        :\t");
-                    Data[0] = Main.next() + Main.nextLine();
-                    System.out.print("Classic White        :\t");
-                    Data[1] = Main.next() + Main.nextLine();
-                    System.out.print("Vanilla              :\t");
-                    Data[2] = Main.next() + Main.nextLine();
-                    System.out.print("Butter Scotch        :\t");
-                    Data[3] = Main.next() + Main.nextLine();
-                    System.out.print("Chocomalt            :\t");
-                    Data[4] = Main.next() + Main.nextLine();
-                    System.out.print("Vanilla Specullos    :\t");
-                    Data[5] = Main.next() + Main.nextLine();
-                    System.out.print("Cherry Blossom       :\t");
-                    Data[6] = Main.next() + Main.nextLine();
+                    if ( Total330ML <= 0) {
+                        System.out.print("Menu Varian 330ML\n");
+                        System.out.print("~~~~~~~~~~~~~~~~~\n");
+                        System.out.print("Classic Black        :\t");
+                        Data[0] = Main.next() + Main.nextLine();
+                        System.out.print("Classic White        :\t");
+                        Data[1] = Main.next() + Main.nextLine();
+                        System.out.print("Vanilla              :\t");
+                        Data[2] = Main.next() + Main.nextLine();
+                        System.out.print("Butter Scotch        :\t");
+                        Data[3] = Main.next() + Main.nextLine();
+                        System.out.print("Chocomalt            :\t");
+                        Data[4] = Main.next() + Main.nextLine();
+                        System.out.print("Vanilla Specullos    :\t");
+                        Data[5] = Main.next() + Main.nextLine();
+                        System.out.print("Cherry Blossom       :\t");
+                        Data[6] = Main.next() + Main.nextLine();
 
-                    double CBlack330ML = Double.parseDouble(Data[0]);
-                    double CWhite330ML = Double.parseDouble(Data[1]);
-                    double V330ML = Double.parseDouble(Data[2]);
-                    double BScotch330ML = Double.parseDouble(Data[3]);
-                    double C330ML = Double.parseDouble(Data[4]);
-                    double VSpecullos330ML = Double.parseDouble(Data[5]);
-                    double CBlossom330ML = Double.parseDouble(Data[6]);
-                    Total330ML = (int) ((CBlack330ML * ClassicBlack330ML)
-                            + (CWhite330ML * ClassicWhite330ML)
-                            + (V330ML * Vanilla330ML)
-                            + (BScotch330ML * ButterScotch330ML)
-                            + (C330ML * Chocomalt330ML)
-                            + (VSpecullos330ML * VanillaSpecullos330ML)
-                            + (CBlossom330ML * CherryBlossom330ML));
+                        double CBlack330ML = Double.parseDouble(Data[0]);
+                        double CWhite330ML = Double.parseDouble(Data[1]);
+                        double V330ML = Double.parseDouble(Data[2]);
+                        double BScotch330ML = Double.parseDouble(Data[3]);
+                        double C330ML = Double.parseDouble(Data[4]);
+                        double VSpecullos330ML = Double.parseDouble(Data[5]);
+                        double CBlossom330ML = Double.parseDouble(Data[6]);
+                        Total330ML = (int) ((CBlack330ML * ClassicBlack330ML)
+                                + (CWhite330ML * ClassicWhite330ML)
+                                + (V330ML * Vanilla330ML)
+                                + (BScotch330ML * ButterScotch330ML)
+                                + (C330ML * Chocomalt330ML)
+                                + (VSpecullos330ML * VanillaSpecullos330ML)
+                                + (CBlossom330ML * CherryBlossom330ML));
 
-                    System.out.printf("Total Penjualan 330ML\t:\t%d\n", Total330ML);
+                        System.out.printf("Total Penjualan 330ML\t:\t%d\n", Total330ML);
+                    }else{
+                        System.out.print("Data sudah terisi, jika ingin mengganti maka pilih menu 4 !!\n");
+                        System.out.print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+                    }
+
+
                 }
                 case 2 -> {
-                    System.out.print("Menu Varian 600ML\n");
-                    System.out.print("~~~~~~~~~~~~~~~~~\n");
-                    System.out.print("Classic Black        :\t");
-                    Data[7] = Main.next() + Main.nextLine();
-                    System.out.print("Classic White        :\t");
-                    Data[8] = Main.next() + Main.nextLine();
-                    System.out.print("Vanilla              :\t");
-                    Data[9] = Main.next() + Main.nextLine();
-                    System.out.print("Butter Scotch        :\t");
-                    Data[10] = Main.next() + Main.nextLine();
-                    System.out.print("Chocomalt            :\t");
-                    Data[11] = Main.next() + Main.nextLine();
-                    System.out.print("Vanilla Specullos    :\t");
-                    Data[12] = Main.next() + Main.nextLine();
-                    System.out.print("Cherry Blossom       :\t");
-                    Data[13] = Main.next() + Main.nextLine();
+                    if ( Total600ML <= 0) {
+                        System.out.print("Menu Varian 600ML\n");
+                        System.out.print("~~~~~~~~~~~~~~~~~\n");
+                        System.out.print("Classic Black        :\t");
+                        Data[7] = Main.next() + Main.nextLine();
+                        System.out.print("Classic White        :\t");
+                        Data[8] = Main.next() + Main.nextLine();
+                        System.out.print("Vanilla              :\t");
+                        Data[9] = Main.next() + Main.nextLine();
+                        System.out.print("Butter Scotch        :\t");
+                        Data[10] = Main.next() + Main.nextLine();
+                        System.out.print("Chocomalt            :\t");
+                        Data[11] = Main.next() + Main.nextLine();
+                        System.out.print("Vanilla Specullos    :\t");
+                        Data[12] = Main.next() + Main.nextLine();
+                        System.out.print("Cherry Blossom       :\t");
+                        Data[13] = Main.next() + Main.nextLine();
 
-                    double CBlack600ML = Double.parseDouble(Data[7]);
-                    double CWhite600ML = Double.parseDouble(Data[8]);
-                    double V600ML = Double.parseDouble(Data[9]);
-                    double BScotch600ML = Double.parseDouble(Data[10]);
-                    double C600ML = Double.parseDouble(Data[11]);
-                    double VSpecullos600ML = Double.parseDouble(Data[12]);
-                    double CBlossom600ML = Double.parseDouble(Data[13]);
-                    Total600ML = (int) ((CBlack600ML * ClassicBlack600ML)
-                            + (CWhite600ML * ClassicWhite600ML)
-                            + (V600ML * Vanilla600ML)
-                            + (BScotch600ML * ButterScotch600ML)
-                            + (C600ML * Chocomalt600ML)
-                            + (VSpecullos600ML * VanillaSpecullos600ML)
-                            + (CBlossom600ML * CherryBlossom600ML));
+                        double CBlack600ML = Double.parseDouble(Data[7]);
+                        double CWhite600ML = Double.parseDouble(Data[8]);
+                        double V600ML = Double.parseDouble(Data[9]);
+                        double BScotch600ML = Double.parseDouble(Data[10]);
+                        double C600ML = Double.parseDouble(Data[11]);
+                        double VSpecullos600ML = Double.parseDouble(Data[12]);
+                        double CBlossom600ML = Double.parseDouble(Data[13]);
+                        Total600ML = (int) ((CBlack600ML * ClassicBlack600ML)
+                                + (CWhite600ML * ClassicWhite600ML)
+                                + (V600ML * Vanilla600ML)
+                                + (BScotch600ML * ButterScotch600ML)
+                                + (C600ML * Chocomalt600ML)
+                                + (VSpecullos600ML * VanillaSpecullos600ML)
+                                + (CBlossom600ML * CherryBlossom600ML));
 
-                    System.out.printf("Total Penjualan 600ML\t:\t%d\n", Total600ML);
+                        System.out.printf("Total Penjualan 600ML\t:\t%d\n", Total600ML);
+                    }else{
+                        System.out.print("Data sudah terisi, jika ingin mengganti maka pilih menu 4 !!\n");
+                        System.out.print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+                    }
+
+
                 }
                 case 3 -> {
                     if (Total330ML > 0 || Total600ML > 0) {
@@ -135,6 +149,13 @@ public class Main {
                         System.out.printf("E. Jumlah Chocomalt          330ML        :\t%s\n", Data[4]);
                         System.out.printf("F. Jumlah Vanilla Specullos  330ML        :\t%s\n", Data[5]);
                         System.out.printf("G. Jumlah Cherry Blossom     330ML        :\t%s\n", Data[6]);
+                        System.out.printf("A. Jumlah Classic Black      600ML        :\t%s\n", Data[7]);
+                        System.out.printf("B. Jumlah Classic White      600ML        :\t%s\n", Data[8]);
+                        System.out.printf("C. Jumlah Vanilla            600ML        :\t%s\n", Data[9]);
+                        System.out.printf("D. Jumlah Butter Scotch      600ML        :\t%s\n", Data[10]);
+                        System.out.printf("E. Jumlah Chocomalt          600ML        :\t%s\n", Data[11]);
+                        System.out.printf("F. Jumlah Vanilla Specullos  600ML        :\t%s\n", Data[12]);
+                        System.out.printf("G. Jumlah Cherry Blossom     600ML        :\t%s\n", Data[13]);
 
                         System.out.print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
                         System.out.printf("Grand Total Penjualah Hari Ini\t:\t%d\n", GTotal);
@@ -170,37 +191,37 @@ public class Main {
                                         Data[0] = null;
                                         System.out.print("A. Jumlah Ganti Baru Classic Black       330ML   :\t");
                                         Data[0] = Main.next() + Main.nextLine();
-                                        System.out.print("Data Berhasil Diganti !!\t");
+                                        System.out.print("Data Berhasil Diganti !!\t\n");
                                     } else if ("B".equalsIgnoreCase(pilihg)) {
                                         Data[1] = null;
                                         System.out.print("B. Jumlah Ganti Baru Classic White       330ML   :\t");
                                         Data[1] = Main.next() + Main.nextLine();
-                                        System.out.print("Data Berhasil Diganti !!\t");
+                                        System.out.print("Data Berhasil Diganti !!\t\n");
                                     } else if ("C".equalsIgnoreCase(pilihg)) {
                                         Data[2] = null;
                                         System.out.print("C. Jumlah Ganti Baru vanilla             330ML   :\t");
                                         Data[2] = Main.next() + Main.nextLine();
-                                        System.out.print("Data Berhasil Diganti !!\t");
+                                        System.out.print("Data Berhasil Diganti !!\t\n");
                                     } else if ("D".equalsIgnoreCase(pilihg)) {
                                         Data[3] = null;
                                         System.out.print("D. Jumlah Ganti Baru Butter Scotch       330ML   :\t");
                                         Data[3] = Main.next() + Main.nextLine();
-                                        System.out.print("Data Berhasil Diganti !!\t");
+                                        System.out.print("Data Berhasil Diganti !!\t\n");
                                     } else if ("E".equalsIgnoreCase(pilihg)) {
                                         Data[4] = null;
                                         System.out.print("E. Jumlah Ganti Baru Chocomalt           330ML   :\t");
                                         Data[4] = Main.next() + Main.nextLine();
-                                        System.out.print("Data Berhasil Diganti !!\t");
+                                        System.out.print("Data Berhasil Diganti !!\t\n");
                                     } else if ("F".equalsIgnoreCase(pilihg)) {
                                         Data[5] = null;
                                         System.out.print("F. Jumlah Ganti Baru vanilla Specullos   330ML   :\t");
                                         Data[5] = Main.next() + Main.nextLine();
-                                        System.out.print("Data Berhasil Diganti !!\t");
+                                        System.out.print("Data Berhasil Diganti !!\t\n");
                                     } else if ("G".equalsIgnoreCase(pilihg)) {
                                         Data[6] = null;
                                         System.out.print("A. Jumlah Ganti Baru Cherry Blossom      330ML   :\t");
                                         Data[6] = Main.next() + Main.nextLine();
-                                        System.out.print("Data Berhasil Diganti !!\t");
+                                        System.out.print("Data Berhasil Diganti !!\t\n");
                                     }
                                     System.out.println("Ketik Y/y untuk merubah menu 330ML lagi, dan ketik Keyword Lain Untuk Kembali ke Menu Awal : ");
                                     loop = Main.next() + Main.nextLine();
@@ -224,17 +245,17 @@ public class Main {
                                         Data[7] = null;
                                         System.out.print("A. Jumlah Ganti Baru Classic Black       600ML   :\t");
                                         Data[7] = Main.next() + Main.nextLine();
-                                        System.out.print("Data Berhasil Diganti !!\t");
+                                        System.out.print("Data Berhasil Diganti !!\t\n");
                                     } else if ("B".equalsIgnoreCase(pilihg)) {
                                         Data[8] = null;
                                         System.out.print("B. Jumlah Ganti Baru Classic White       600ML   :\t");
                                         Data[8] = Main.next() + Main.nextLine();
-                                        System.out.print("Data Berhasil Diganti !!\t");
+                                        System.out.print("Data Berhasil Diganti !!\t\n");
                                     } else if ("C".equalsIgnoreCase(pilihg)) {
                                         Data[9] = null;
                                         System.out.print("C. Jumlah Ganti Baru vanilla             600ML   :\t");
                                         Data[9] = Main.next() + Main.nextLine();
-                                        System.out.print("Data Berhasil Diganti !!\t");
+                                        System.out.print("Data Berhasil Diganti !!\t\n");
                                     } else if ("D".equalsIgnoreCase(pilihg)) {
                                         Data[10] = null;
                                         System.out.print("D. Jumlah Ganti Baru Butter Scotch       600ML   :\t");
@@ -244,17 +265,17 @@ public class Main {
                                         Data[11] = null;
                                         System.out.print("E. Jumlah Ganti Baru Chocomalt           600ML   :\t");
                                         Data[11] = Main.next() + Main.nextLine();
-                                        System.out.print("Data Berhasil Diganti !!\t");
+                                        System.out.print("Data Berhasil Diganti !!\t\n");
                                     } else if ("F".equalsIgnoreCase(pilihg)) {
                                         Data[12] = null;
                                         System.out.print("F. Jumlah Ganti Baru vanilla Specullos   600ML   :\t");
                                         Data[12] = Main.next() + Main.nextLine();
-                                        System.out.print("Data Berhasil Diganti !!\t");
+                                        System.out.print("Data Berhasil Diganti !!\t\n");
                                     } else if ("G".equalsIgnoreCase(pilihg)) {
                                         Data[13] = null;
                                         System.out.print("G. Jumlah Ganti Baru Cherry Blossom      600ML   :\t");
                                         Data[13] = Main.next() + Main.nextLine();
-                                        System.out.print("Data Berhasil Diganti !!\t");
+                                        System.out.print("Data Berhasil Diganti !!\t\n");
                                     }
 
                                     System.out.println("Ketik Y/y untuk merubah menu 660 ML lagi, dan ketik Keyword Lain Untuk Kembali ke Menu Pergantian Jumlah Varian : ");
