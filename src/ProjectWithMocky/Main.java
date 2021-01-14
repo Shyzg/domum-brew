@@ -283,7 +283,7 @@ public class Main {
                                 } while ("Y".equalsIgnoreCase(loop));
                             }
 
-                        } else if ( Total330ML <= 0 || Total600ML <= 0){
+                        } else {
                             System.out.print("Anda Belum Menghitung Pedapatan Hari Ini !!!\n");
                         }
 
