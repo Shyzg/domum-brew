@@ -160,7 +160,7 @@ public class Main {
                         System.out.print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
                         System.out.printf("Grand Total Penjualah Hari Ini\t:\t%d\n", GTotal);
                     } else {
-                        System.out.print("Anda Belum Menghitung Pedapatan Hari Ini, Silahkan Coba Ke\n");
+                        System.out.print("Anda Belum Menghitung Pedapatan Hari Ini, Silahkan Mengisi Terlebih Dahulu\n");
                     }
                 }
                 case 4 -> {
@@ -283,7 +283,7 @@ public class Main {
                                 } while ("Y".equalsIgnoreCase(loop));
                             }
 
-                        } else if ( Total330ML < 0 || Total600ML < 0){
+                        } else if ( Total330ML <= 0 || Total600ML <= 0){
                             System.out.print("Anda Belum Menghitung Pedapatan Hari Ini !!!\n");
                         }
 
