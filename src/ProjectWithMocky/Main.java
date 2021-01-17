@@ -46,12 +46,19 @@ public class Main {
         String loop2;
 
         do {
+            System.out.print("=======================================\n");
+            System.out.print("~~PROGRAM PERHITUNGAN KEUNTUNGAN HARIAN~~\n");
             System.out.print("1. Menu Varian 330ML\n");
             System.out.print("2. Menu Varian 600ML\n");
             System.out.print("3. Hitung Grand Total Penjualan\n");
             System.out.print("4. Ganti Varian\n");
             System.out.print("Pilih Menu\t:\t");
             byte PilihVarian = Main.nextByte();
+            for ( int i = 0 ;i < 50 ; i++ ) {
+                System.out.println("\n");
+            }
+
+
 
             switch (PilihVarian) {
                 case 1 -> {
@@ -93,6 +100,7 @@ public class Main {
                         System.out.print("Data sudah terisi, jika ingin mengganti maka pilih menu 4 !!\n");
                         System.out.print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
                     }
+
 
 
                 }
@@ -293,9 +301,18 @@ public class Main {
 
 
                 }
+
+            }
+            if ( PilihVarian > 4 ) {
+                System.out.print("Pilihan Anda Diluar Dari Pilihan Yang Tersedia !!\n");
+
             }
             System.out.print("Ketik Y/y Untuk Kembali ke Menu Awal, Dan Ketik Keyword Lain Untuk Mengakhiri Program Ini\t:\t");
             Menu = Main.next() + Main.nextLine();
+            for ( int i = 0 ;i < 50 ; i++ ) {
+                System.out.println("\n");
+            }
+
         } while ("Y".equalsIgnoreCase(Menu));
     }
 }
