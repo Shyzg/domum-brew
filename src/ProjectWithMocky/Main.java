@@ -309,7 +309,7 @@ public class Main {
             }
             System.out.print("Ketik Y/y Untuk Kembali ke Menu Awal, Dan Ketik Keyword Lain Untuk Mengakhiri Program Ini\t:\t");
             Menu = Main.next() + Main.nextLine();
-            for ( int i = 0 ;i < 50 ; i++  ) {
+            for ( int i = 0 ;i < 50 ; i++ ) {
                 System.out.println("\n");
             }
 
