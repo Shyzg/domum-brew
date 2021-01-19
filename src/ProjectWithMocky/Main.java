@@ -297,7 +297,7 @@ public class Main {
 
                         System.out.print("Apakah Anda Yakin (Y/N) ?");
                         loop2 = Main.next() + Main.nextLine();
-                    } while ("Y".equalsIgnoreCase(loop2)) ;
+                    } while (!"Y".equalsIgnoreCase(loop2)) ;
 
 
                 }
