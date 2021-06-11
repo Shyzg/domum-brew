@@ -1,2 +1,1 @@
-# UAS_AlgoritmProgramming
-Algorithm Programming Semester 1
+# UAS Algoritm Programming
