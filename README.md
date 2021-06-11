@@ -1,2 +1,2 @@
-# ProjectWithMocky
-Algorithm &amp; Programming Semester 1
+# UAS_AlgoritmProgramming
+Algorithm Programming Semester 1
